@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Space</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<!-- 
+npx @tailwindcss/cli -i ./dist/input.css -o ./dist/output.css --watch
+
+npx tailwindcss -i ./dist/input.css -o ./dist/output.css --minify
+
+-->
+<body>
+
+    <!-- Nav Bar -->
+
+    <header class="w-full flex justify-center items-center text-white fixed">
+        <nav class="flex justify-center items-center gap-[25vw] sm:gap-[50vw] xl:gap-[40vw] p-[30px]">
+            <h2 class="text-2xl font-bold">DEV SPACE</h2> <!-- Logo -->
+
+            <!-- Nav links -->
+
+            <ul class="hidden xl:flex justify-center items-center gap-[40px]">
+                <li><button class="nav-btn font-light cursor-pointer hover-underline nav-links">What we do</button></li>
+                <li><button class="nav-btn font-light cursor-pointer hover-underline nav-links">Pricing</button></li>
+                <li><button class="nav-btn font-light cursor-pointer hover-underline nav-links">Our Team</button></li>
+                <li><button
+                        class="nav-btn cursor-pointer p-[6px] pl-[20px] pr-[20px] bg-[#02bca0] rounded-2xl font-semibold">Download</button>
+                </li>
+            </ul>
+
+            <!-- Menu icon button -->
+            <button class="text-white xl:hidden cursor-pointer" id="menu-btn">&#9776;</button>
+
+        </nav>
+    </header>
+
+
+    <!-- Nav links in menu -->
+    <aside>
+        <nav id="menu-bar-links" class="absolute top-[110px] z-10 ">
+            <!-- Nav links -->
+
+            <ul
+                class="flex flex-col text-center text-white justify-center items-center gap-[20px] pt-[40px] pb-[40px] w-[100vw] opacity-0 bg-black duration-300 h-[0px]">
+
+                <li><button class="nav-btn font-light cursor-pointer aside-links">What we do</button></li>
+                <li><button class="nav-btn font-light cursor-pointer aside-links">Pricing</button></li>
+                <li><button class="nav-btn font-light cursor-pointer aside-links">Our Team</button></li>
+                <li><button
+                        class="nav-btn cursor-pointer p-[6px] pl-[20px] pr-[20px] bg-[#0dbd68] rounded-2xl font-semibold">Download</button>
+                </li>
+            </ul>
+
+        </nav>
+    </aside>
+
+    <!-- main -->
+    <main>
+
+        <!-- Hero section -->
+        <section
+            class="w-[100vw] flex flex-col lg:flex-row  justify-center items-center gap-[50px] 2xl:gap-[250px] p-[20px] sm:p-[80px] pb-[120px] pt-[50px] section">
+
+            <!-- Info -->
+            <div class="text-white max-w-[750px] flex flex-col gap-[25px] pt-[70px] aniLeft">
+
+                <!-- Headline -->
+                <h1 class="font-black text-5xl sm:text-6xl headline text-[#06fdd8]">Design UI <br> App Development
+                    <br> Consultant Services
+                </h1>
+
+                <!-- Summary -->
+                <p class="text-lg font-extralight opacity-80">We are doing UI Design, App Development and give you a
+                    good work and reliability under less cost.
+                    Come with us and see the result!</p>
+
+                <!-- CTA -->
+                <a href="enter_your_page_link_here" target="_blank"
+                    class="bg-transparent p-[10px] border border-white pl-[30px] pr-[30px] w-[230px] rounded-[2px] hover:bg-black hover:border-none duration-700 font-semibold cursor-pointer transform active:scale-75">LET'S
+                    START TODAY</a>
+            </div>
+
+            <!-- Banner -->
+            <img src="/assets/devs.png" alt="Hero banner" class="h-[200px] sm:h-[300px] lg:h-[380px] aniRight">
+        </section>
+
+
+
+        <!-- Collabrations -->
+
+        <section class="bg-[#f5f5f5] w-[100vw] flex justify-center items-center text-center gap-[20px] section">
+
+            <div class="w-full flex flex-col justify-center items-center pl-[25px] pr-[25px] pt-[40px] ">
+
+                <!-- Headline -->
+                <h3 class="text-center text-xl font-extralight opacity-30 underline">Trusted By The Best Clients</h3>
+
+
+                <div class="flex flex-wrap justify-center items-center  gap-[75px] p-[25px] pt-[50px] pb-[50px] aniRight">
+
+                    <!-- Logos -->
+                    <img src="/assets/Logo-algolia.png" alt="Algolia" class="h-[50px]">
+                    <img src="/assets/logo-lapa-ninja.svg" alt="Lapa" class="h-[50px]">
+                    <img src="/assets/logo-hugo.svg" alt="Hugo" class="h-[50px]">
+                    <img src="/assets/logo-codecademy.svg" alt="Codecademy" class="h-[50px]">
+                    <img src="/assets/logo-aws.svg" alt="AWS" class="h-[50px]">
+                    <img src="/assets/logo-stripe.svg" alt="Stripe" class="h-[70px]">
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- What we do (Services) section -->
+        <section
+            class="w-[100vw] flex flex-col justify-center items-center bg-white p-[20px] pt-[60px] pb-[50px] sections section">
+
+            <!-- Headline -->
+            <h3 class="text-center text-xl font-extralight opacity-30 underline">What We Do?</h3>
+
+            <div class="flex justify-center items-center flex-wrap gap-[80px] pt-[50px]">
+
+                <!-- Services -->
+
+                <!-- Service 1 -->
+                <article class="flex flex-col justify-center items-center text-center gap-[20px] aniLeft">
+                    <img src="/assets/logo-hat-icon.jpg" alt="Interface Design" class="h-[80px]">
+
+                    <div class="flex flex-col gap-[10px]">
+                        <h2 class="text-2xl font-extrabold">Interface Design</h2>
+                        <p class="text-lg opacity-85 max-w-[430px]">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Vel, ad? Possimus accusamus sapiente doloribus quae molestiae.</p>
+                    </div>
+
+                    <a href="#" class="text-lg text-[#5e51c3] font-bold ">Learn more</a>
+                </article>
+
+
+                <!-- Service 2 -->
+                <article class="flex flex-col justify-center items-center text-center gap-[20px] aniRight">
+                    <img src="/assets/logo-cup.svg" alt="Web Application" class="h-[80px]">
+
+                    <div class="flex flex-col gap-[10px]">
+                        <h2 class="text-2xl font-extrabold">Web Application</h2>
+                        <p class="text-lg opacity-85 max-w-[430px]">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Vel, ad? Possimus accusamus sapiente doloribus quae molestiae.</p>
+                    </div>
+
+                    <a href="#" class="text-lg text-[#5e51c3] font-bold ">Learn more</a>
+                </article>
+
+
+
+                <!-- Service 3 -->
+                <article class="flex flex-col justify-center items-center text-center gap-[20px] aniLeft">
+                    <img src="/assets/logo-flag.svg" alt="Software Development" class="h-[60px]">
+
+                    <div class="flex flex-col gap-[10px]">
+                        <h2 class="text-2xl font-extrabold">Software Development</h2>
+                        <p class="text-lg opacity-85 max-w-[430px]">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Vel, ad? Possimus accusamus sapiente doloribus quae molestiae.</p>
+                    </div>
+
+                    <a href="#" class="text-lg text-[#5e51c3] font-bold ">Learn more</a>
+                </article>
+
+
+            </div>
+        </section>
+
+        <!-- Prcing Section -->
+        <section
+            class="w-[100vw] flex flex-col justify-center items-center text-center gap-[50px] bg-[#09017c] p-[20px] pt-[60px] pb-[50px] sections section">
+            <!-- Headline -->
+            <h3 class="text-center text-xl font-extralight text-[#847de2] opacity-70 underline">Pricing</h3>
+
+            <!-- Main headline -->
+            <h1 class="headline text-white text-4xl sm:text-5xl font-extrabold max-w-[960px]">We build <span
+                    class="text-[#0cfad7]">reliable infrastructure</span>, use comparative in-house tools.</h1>
+
+
+            <!-- Pricing cards -->
+
+            <div class="flex flex-wrap justify-center items-center gap-[100px]">
+
+                <!-- Card 1 -->
+                <article
+                    class="flex flex-col justify-center items-center gap-[40px] bg-white p-[20px] pt-[25px] pb-[25px] rounded-[3px] aniLeft">
+
+                    <h3 class="text-xl font-light">Pro</h3>
+                    <div class="flex flex-col justify-center items-center gap-[25px]">
+
+                        <div class="flex justify-center gap-[10px] items-center">
+                            <h2 class="text-4xl font-black">$2500</h2>
+                            <p class="opacity-80 text-xl font-semibold">/ year</p>
+                        </div>
+
+                        <div class="flex flex-col gap-[8px] text-lg justify-center items-center ">
+                            <p><b>10</b> billabe hours per months</p>
+
+                            <p class="max-w-[340px]">Lorem ipsum dolor sit amet <b>300$</b> consectetur adipisicing
+                                elit. Maiores corrupti atque aliquid molestias <b>24/7/365</b> voluptate incidunt cum
+                                animi
+                                repudiandae. Dolores eveniet.</p>
+                        </div>
+
+                        <button
+                            class="text-white font-bold bg-[#1f1f23] p-[10px] pl-[50px] pr-[50px] text-lg cursor-pointer transform active:translate-y-[10px] duration-300">Contact
+                            Us</button>
+                    </div>
+
+                </article>
+
+
+
+                <!-- Card 2 -->
+                <article
+                    class="flex flex-col justify-center items-center gap-[40px] bg-white p-[20px] pt-[25px] pb-[25px] rounded-[3px] aniRight">
+
+                    <h3 class="text-xl font-light">Standard</h3>
+                    <div class="flex flex-col justify-center items-center gap-[25px]">
+
+                        <div class="flex justify-center gap-[10px] items-center">
+                            <h2 class="text-4xl font-black">$5000</h2>
+                            <p class="opacity-80 text-xl font-semibold">/ year</p>
+                        </div>
+
+                        <div class="flex flex-col gap-[8px] text-lg justify-center items-center ">
+                            <p><b>10</b> billabe hours per months</p>
+
+                            <p class="max-w-[340px]">Lorem ipsum dolor sit amet <b>300$</b> consectetur adipisicing
+                                elit. Maiores corrupti atque aliquid molestias <b>24/7/365</b> voluptate incidunt cum
+                                animi
+                                repudiandae. Dolores eveniet.</p>
+                        </div>
+
+                        <button
+                            class="text-white font-bold bg-[#1f1f23] p-[10px] pl-[50px] pr-[50px] text-lg cursor-pointer transform active:translate-y-[10px] duration-300">Contact
+                            Us</button>
+                    </div>
+
+                </article>
+
+
+
+
+
+                <!-- Card 3 -->
+                <article
+                    class="flex flex-col justify-centernter items-center gap-[40px] bg-white p-[20px] pt-[25px] pb-[25px] rounded-[3px] aniLeft">
+
+                    <h3 class="text-xl font-light">Premium</h3>
+                    <div class="flex flex-col justify-center items-center gap-[25px]">
+
+                        <div class="flex justify-center gap-[10px] items-center">
+                            <h2 class="text-4xl font-black">$7500</h2>
+                            <p class="opacity-80 text-xl font-semibold">/ year</p>
+                        </div>
+
+                        <div class="flex flex-col gap-[8px] text-lg justify-center items-center ">
+                            <p><b>10</b> billabe hours per months</p>
+
+                            <p class="max-w-[340px]">Lorem ipsum dolor sit amet <b>300$</b> consectetur adipisicing
+                                elit. Maiores corrupti atque aliquid molestias <b>24/7/365</b> voluptate incidunt cum
+                                animi
+                                repudiandae. Dolores eveniet.</p>
+                        </div>
+
+                        <button
+                            class="text-white font-bold bg-[#1f1f23] p-[10px] pl-[50px] pr-[50px] text-lg cursor-pointer transform active:translate-y-[10px] duration-300">Contact
+                            Us</button>
+                    </div>
+
+                </article>
+
+
+            </div>
+        </section>
+
+
+        <!-- Team -->
+
+        <section
+            class="w-[100vw] flex flex-col justify-center items-center text-center bg-[#f7f7f7] gap-[50px] p-[20px] pt-[60px] pb-[50px] section sections">
+
+            <!-- Headline -->
+            <h3 class="text-center text-xl font-extralight text-[#847de2] opacity-70 underline">Meet Our Team</h3>
+
+            <div class="flex flex-wrap justify-center items-center gap-[75px] sm:gap-[100px] xl:gap-[200px] aniLeft">
+
+                <!-- Cards -->
+
+
+                <!-- Devops -->
+                <article class="flex flex-col justify-center items-center gap-[25px] text-center p-[10px]">
+                    <img src="/assets/devops.jpeg" alt="Dev Space Devops" class="rounded-xl">
+                    <div>
+                        <h3 class="text-[#8481d8] text-2xl font-black">Jon Doe</h3>
+                        <h3 class="text-lg font-semibold">DevOps</h3>
+                    </div>
+                </article>
+
+
+                <!-- Developer -->
+                     <article class="flex flex-col justify-center items-center gap-[25px] text-center p-[10px]">
+                    <img src="/assets/developer.jpeg" alt="Dev SpaceD eveloper" class="rounded-xl">
+                    <div>
+                        <h3 class="text-[#8481d8] text-2xl font-black">Frank Samuael</h3>
+                        <h3 class="text-lg font-semibold">Developer</h3>
+                    </div>
+                </article>
+
+
+                <!-- Designer -->
+                     <article class="flex flex-col justify-center items-center gap-[25px] text-center p-[10px]">
+                    <img src="/assets/designer.jpeg" alt="Dev Space Designer" class="rounded-xl">
+                    <div>
+                        <h3 class="text-[#8481d8] text-2xl font-black">Gorgina Teres</h3>
+                        <h3 class="text-lg font-semibold">Designer</h3>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+
+
+            <!-- Open source -->
+        <section class="w-[100vw] flex flex-col justify-center items-center text-center bg-white p-[20px] pt-[100px] pb-[80px] section">
+
+
+            <article class="flex flex-col justify-center items-center gap-[50px] text-center ">
+
+                <!-- Headline -->
+            <h3 class="text-center text-xl font-extralight text-[#343434] opacity-60 underline">We Love Open Source</h3>
+
+            <div class="flex flex-col justify-center items-center gap-[35px] aniRight">
+
+                <img src="/assets/logo-flag.svg" alt="Open source" class="h-[100px]">
+                <h1 class="text-6xl opacity-85 font-black headline">We're making <br> Open Source Software</h1>
+
+                <button class="text-lg font-light border border-[#999999] p-[12px] pl-[30px] pr-[30px] hover:bg-black transform active:translate-y-[15px] duration-300 hover:text-white cursor-pointer">Follow Us on Github</button>
+            </div>
+            </article>
+        </section>
+
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <footer class="w-[100vw] flex justify-center items-center bg-[#09017c] pt-[50px] pb-[30px]">
+        <div class="p-[30px] flex flex-wrap gap-[100px] xl:gap-[200px] text-white sections">
+
+            <!-- Services -->
+             <nav class="flex flex-col gap-[15px] aniLeft">
+                <h3 class="text-xl font-bold">Services</h3>
+                <ul class="flex flex-col gap-[5px] text-lg opacity-70">
+                    <li><a href="#">DevOps</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Consultant</a></li>
+                </ul>
+             </nav>
+
+
+             <!-- Clients -->
+              <nav class="flex flex-col gap-[15px] aniLeft">
+                <h3 class="text-xl font-bold">Clients</h3>
+                <ul class="flex flex-col gap-[5px] text-lg opacity-70">
+                    <li><a href="#">Lapa Ninja</a></li>
+                    <li><a href="#">Noty IM</a></li>
+                    <li><a href="#">Yeo Spae</a></li>
+                </ul>
+             </nav>
+
+
+
+
+              <!-- Contact Us -->
+              <nav class="flex flex-col gap-[15px] aniRight">
+                <h3 class="text-xl font-bold">Contact Us</h3>
+                <ul class="flex flex-col gap-[5px] text-lg opacity-70">
+                    <li><a href="mailto:devspace911@gmail.com">devspace911@gmail.com</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Github</a></li>
+                </ul>
+             </nav>
+
+
+
+              <!-- Copyright -->
+              <nav class="flex flex-col gap-[15px] aniRight">
+                <h3 class="text-xl font-bold">Copyright</h3>
+                <ul class="flex flex-col gap-[5px] text-lg opacity-70">
+                    <li><a href="#">Dev Space</a></li>
+                    <li><a href="#">Itamori</a></li>
+                </ul>
+             </nav>
+        </div>
+    </footer>
+
+    <script src="/src/script.js"></script>
+</body>
+
+</html>
