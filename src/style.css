@@ -17,6 +17,12 @@ header {
     z-index: 10;
 }
 
+header nav {
+    position: fixed;
+    top: 0px;
+}
+
+
 .navOpen {
     opacity: 1;
     height: 300px;
@@ -172,6 +178,7 @@ header {
 .animation-from-right {
     animation: fromRight 2s ease forwards;
 }
+
 
 
 
